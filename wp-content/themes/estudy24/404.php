@@ -1,0 +1,1 @@
+<?php get_header(); ?><main class="wrap block"><section class="intro"><div class="wrap"><span class="idx"><b>404</b><i>NOT FOUND</i></span><div><p>عذراً، الصفحة غير موجودة</p><h1>لم نجد ما تبحث عنه</h1><a class="primary" href="<?php echo esc_url( home_url( '/' ) ); ?>">العودة للرئيسية</a></div></div></section></main><?php get_footer(); ?>

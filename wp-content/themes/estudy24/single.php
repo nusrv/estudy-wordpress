@@ -1,0 +1,1 @@
+<?php get_header(); while ( have_posts() ) : the_post(); ?><main class="wrap block"><article><header class="sect"><h1><?php the_title(); ?></h1></header><?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'large' ); } ?><div class="prose"><?php the_content(); ?></div></article></main><?php endwhile; get_footer(); ?>

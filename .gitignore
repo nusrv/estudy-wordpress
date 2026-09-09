@@ -1,0 +1,26 @@
+# Local WordPress configuration and credentials
+wp-config.php
+.env
+.env.*
+!.env.example
+
+# User-generated media and temporary/generated WordPress data
+wp-content/uploads/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/backup*/
+wp-content/backups/
+wp-content/ai1wm-backups/
+wp-content/updraft/
+wp-content/wflogs/
+
+# WordPress maintenance artifacts
+.maintenance
+wp-content/debug.log
+error_log
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
