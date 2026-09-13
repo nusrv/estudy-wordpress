@@ -34,6 +34,7 @@ function estudy24_assets() {
     wp_enqueue_script( 'estudy24-site', get_template_directory_uri() . '/theme.js', array(), ESTUDY24_VERSION, true );
     $width = absint( get_theme_mod( 'estudy24_logo_width', 150 ) );
     wp_add_inline_style( 'estudy24-site', '.brand img{width:' . $width . 'px;max-width:60vw;height:auto}' );
+    wp_add_inline_style( 'estudy24-site', 'html,body,#page{margin:0!important;padding:0!important;width:100%}' );
 }
 add_action( 'wp_enqueue_scripts', 'estudy24_assets' );
 
@@ -136,3 +137,4 @@ function estudy24_course_image_url( $post_id ) {
     $file = get_post_meta( $post_id, '_estudy24_image', true );
     return $file ? get_template_directory_uri() . '/assets/' . rawurlencode( $file ) : get_template_directory_uri() . '/assets/course-signals.png';
 }
+
